@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fontawesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <title>Login - Spotify</title>
+</head>
+<body>
+  <!-- Header -->
+  <header id="auth-header">
+    <div class="container">
+      <img src="images/auth.svg" alt="Logo Image">
+    </div>
+  </header>
+
+  <!-- Form Section -->
+  <section id="form-section">
+    <div class="container">
+      <div class="form-wrapper">
+        <!-- Social Buttons -->
+        <div class="social-div">
+          <p>To continue, log in to Spotify.</p>
+          <button class="btn btn-block btn-fb"><i class="fa-brands fa-facebook-square"></i> Continue with facebook</button>
+          <button class="btn btn-block btn-apple"><i class="fa-brands fa-apple"></i> Continue with apple</button>
+          <button class="btn btn-block btn-google"><i class="fa-brands fa-google"></i> Continue with google</button>
+        </div>
+        <!-- Spacer -->
+        <div class="spacer">
+          <hr class="">
+          <span>OR</span>
+          <hr class="">
+        </div>
+        <!-- Login Form -->
+        <div class="form">
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="email">Email address or username</label>
+              <input type="text" name="email" id="email" placeholder="Email address or username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <p for="password">Forgot your password?</p>
+            </div>
+            <div class="form-group form-group-remember">
+              <div class="remember-me">
+                <input type="checkbox" name="remember" id="" checked>
+                <label for="remember">Remember me</label>
+              </div>
+              <button class="btn btn-filled">login</button>
+            </div>
+          </form>
+        <hr class="hr-spacer">
+        </div>
+        <div class="dont-have-account">
+          <p>Don't have an account?</p>
+          <button class="btn btn-block btn-google">sign up for spotify</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
